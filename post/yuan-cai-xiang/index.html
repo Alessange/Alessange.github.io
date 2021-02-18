@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>圆猜想 | Alessange</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://Alessange.github.io/favicon.ico?v=1613620613877">
+<link rel="stylesheet" href="https://Alessange.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="我之前在洋葱数学上看到一个视频：
+找规律：1，2，4，8，16，____。
+这其实是有两个解的，32和31。32和31。32和31。
+32是非常容易得到的，但是31的得到就有一点学问，与割圆有关。
+即: 在圆中，n个点两两连线，最多可以把一..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://Alessange.github.io">
+        <img src="https://Alessange.github.io/images/avatar.png?v=1613620613877" class="site-logo">
+        <h1 class="site-title">Alessange</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            INFORMATION
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      我就这么坐着
+
+生活给我什么我就接着
+
+拿走什么我就看着
+    </div>
+    <div class="site-footer">
+      Powered by xun | <a class="rss" href="https://Alessange.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">圆猜想</h2>
+            <div class="post-date">2020-09-24</div>
+            
+            <div class="post-content" v-pre>
+              <p>我之前在洋葱数学上看到一个视频：<br>
+<strong>找规律</strong>：1，2，4，8，16，____。<br>
+这其实是有两个解的，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>32</mn><mi mathvariant="normal">和</mi><mn>31</mn><mi mathvariant="normal">。</mi></mrow><annotation encoding="application/x-tex">32和31。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">2</span><span class="mord cjk_fallback">和</span><span class="mord">3</span><span class="mord">1</span><span class="mord cjk_fallback">。</span></span></span></span><br>
+<strong>32</strong>是非常容易得到的，但是<strong>31</strong>的得到就有一点学问，与割圆有关。<br>
+<strong><strong>即</strong>: <em>在圆中，n个点两两连线，最多可以把一个圆分成几份。</em></strong></p>
+<!-- more -->
+<p>我心血来潮的在图形计算器中画了几幅图。</p>
+<p>一个点显然是连接不了任何直线，所以圆还是一整个，即<strong>1</strong>份<br>
+<img src="https://Alessange.github.io/post-images/1613618597037.jpg" alt="" loading="lazy"><br>
+两个点可以连成一条线，即<strong>2</strong>份<br>
+<img src="https://Alessange.github.io/post-images/1613618669006.jpg" alt="" loading="lazy"><br>
+三个点，<strong>4</strong>份<br>
+<img src="https://Alessange.github.io/post-images/1613619012582.jpg" alt="" loading="lazy"><br>
+四个点，<strong>8</strong>份<br>
+<img src="https://Alessange.github.io/post-images/1613619036791.jpg" alt="" loading="lazy"><br>
+五个点，<strong>16</strong>份<br>
+<img src="https://Alessange.github.io/post-images/1613619068428.jpg" alt="" loading="lazy"><br>
+这看起来是和<strong>2</strong>的幂有关，但是六个点却能把圆分成<strong>31</strong>份<br>
+<img src="https://Alessange.github.io/post-images/1613619752124.jpg" alt="" loading="lazy"></p>
+<!-- more -->
+<h1 id="那么规律到底是什么呢">那么，规律到底是什么呢？</h1>
+<p>** 先从简单的入手，圆上有多少条直线和多少个点呢？**<br>
+假设，圆上有n个点，那么就有（n-1)个点与它连线。在有多少条直线的问题中，每条线对应着两个点，两个点对应着一条直线。这样就变成了单循环的问题了，公式为：<em>n(n-1)/2</em></p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://Alessange.github.io/post/fibonacci-number/">
+                  <h3 class="post-title">
+                    Fibonacci number
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

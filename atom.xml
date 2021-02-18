@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Alessange.github.io</id>
     <title>Alessange</title>
-    <updated>2020-09-24T15:00:38.944Z</updated>
+    <updated>2021-02-18T03:56:58.029Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Alessange.github.io"/>
     <link rel="self" href="https://Alessange.github.io/atom.xml"/>
@@ -13,7 +13,53 @@
 拿走什么我就看着</subtitle>
     <logo>https://Alessange.github.io/images/avatar.png</logo>
     <icon>https://Alessange.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Alessange</rights>
+    <rights>All rights reserved 2021, Alessange</rights>
+    <entry>
+        <title type="html"><![CDATA[圆猜想]]></title>
+        <id>https://Alessange.github.io/post/yuan-cai-xiang/</id>
+        <link href="https://Alessange.github.io/post/yuan-cai-xiang/">
+        </link>
+        <updated>2020-09-24T14:54:38.000Z</updated>
+        <summary type="html"><![CDATA[<p>我之前在洋葱数学上看到一个视频：<br>
+<strong>找规律</strong>：1，2，4，8，16，____。<br>
+这其实是有两个解的，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>32</mn><mi mathvariant="normal">和</mi><mn>31</mn><mi mathvariant="normal">。</mi></mrow><annotation encoding="application/x-tex">32和31。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">2</span><span class="mord cjk_fallback">和</span><span class="mord">3</span><span class="mord">1</span><span class="mord cjk_fallback">。</span></span></span></span><br>
+<strong>32</strong>是非常容易得到的，但是<strong>31</strong>的得到就有一点学问，与割圆有关。<br>
+<strong><strong>即</strong>: <em>在圆中，n个点两两连线，最多可以把一个圆分成几份。</em></strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我之前在洋葱数学上看到一个视频：<br>
+<strong>找规律</strong>：1，2，4，8，16，____。<br>
+这其实是有两个解的，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>32</mn><mi mathvariant="normal">和</mi><mn>31</mn><mi mathvariant="normal">。</mi></mrow><annotation encoding="application/x-tex">32和31。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">2</span><span class="mord cjk_fallback">和</span><span class="mord">3</span><span class="mord">1</span><span class="mord cjk_fallback">。</span></span></span></span><br>
+<strong>32</strong>是非常容易得到的，但是<strong>31</strong>的得到就有一点学问，与割圆有关。<br>
+<strong><strong>即</strong>: <em>在圆中，n个点两两连线，最多可以把一个圆分成几份。</em></strong></p>
+<!-- more -->
+<p>我心血来潮的在图形计算器中画了几幅图。</p>
+<p>一个点显然是连接不了任何直线，所以圆还是一整个，即<strong>1</strong>份<br>
+<img src="https://Alessange.github.io/post-images/1613618597037.jpg" alt="" loading="lazy"><br>
+两个点可以连成一条线，即<strong>2</strong>份<br>
+<img src="https://Alessange.github.io/post-images/1613618669006.jpg" alt="" loading="lazy"><br>
+三个点，<strong>4</strong>份<br>
+<img src="https://Alessange.github.io/post-images/1613619012582.jpg" alt="" loading="lazy"><br>
+四个点，<strong>8</strong>份<br>
+<img src="https://Alessange.github.io/post-images/1613619036791.jpg" alt="" loading="lazy"><br>
+五个点，<strong>16</strong>份<br>
+<img src="https://Alessange.github.io/post-images/1613619068428.jpg" alt="" loading="lazy"><br>
+这看起来是和<strong>2</strong>的幂有关，但是六个点却能把圆分成<strong>31</strong>份<br>
+<img src="https://Alessange.github.io/post-images/1613619752124.jpg" alt="" loading="lazy"></p>
+<!-- more -->
+<h1 id="那么规律到底是什么呢">那么，规律到底是什么呢？</h1>
+<p>** 先从简单的入手，圆上有多少条直线和多少个点呢？**<br>
+假设，圆上有n个点，那么就有（n-1)个点与它连线。在有多少条直线的问题中，每条线对应着两个点，两个点对应着一条直线。这样就变成了单循环的问题了，公式为：<em>n(n-1)/2</em></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fibonacci number]]></title>
+        <id>https://Alessange.github.io/post/fibonacci-number/</id>
+        <link href="https://Alessange.github.io/post/fibonacci-number/">
+        </link>
+        <updated>2020-09-24T14:53:57.000Z</updated>
+        <content type="html"><![CDATA[<p>1</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[微信使用有感]]></title>
         <id>https://Alessange.github.io/post/wei-xin-shi-yong-you-gan/</id>
