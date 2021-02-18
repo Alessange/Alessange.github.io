@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://Alessange.github.io/favicon.ico?v=1613647118917">
+<link rel="shortcut icon" href="https://Alessange.github.io/favicon.ico?v=1613647277411">
 <link rel="stylesheet" href="https://Alessange.github.io/styles/main.css">
 
 
@@ -20,9 +20,11 @@
 
     <meta name="description" content="我之前在洋葱数学上看到一个视频：
 找规律：1，2，4，8，16，____。
-这其实是有两个解的，32和3132和3132和31
+这其实是有两个解的，$$32和31$$
 32是非常容易得到的，但是31的得到就有一点学问，与割圆有关。
-即: 在圆中，n个点两两连线，最多可以把一个圆分..." />
+即: 在圆中，n个点两两连线，最多可以把一个圆分成几份。
+
+..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -32,7 +34,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://Alessange.github.io">
-        <img src="https://Alessange.github.io/images/avatar.png?v=1613647118917" class="site-logo">
+        <img src="https://Alessange.github.io/images/avatar.png?v=1613647277411" class="site-logo">
         <h1 class="site-title">Alessange</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -104,7 +106,7 @@
             <div class="post-content" v-pre>
               <p>我之前在洋葱数学上看到一个视频：<br>
 <strong>找规律</strong>：1，2，4，8，16，____。<br>
-这其实是有两个解的，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>32</mn><mi mathvariant="normal">和</mi><mn>31</mn></mrow><annotation encoding="application/x-tex">32和31</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">2</span><span class="mord cjk_fallback">和</span><span class="mord">3</span><span class="mord">1</span></span></span></span><br>
+这其实是有两个解的，$$32和31$$<br>
 <strong>32</strong>是非常容易得到的，但是<strong>31</strong>的得到就有一点学问，与割圆有关。<br>
 <strong><strong>即</strong>: <em>在圆中，n个点两两连线，最多可以把一个圆分成几份。</em></strong></p>
 <!-- more -->
@@ -128,11 +130,11 @@
 <li>假设，圆上有n个点，那么就有（n-1)个点与它连线。在有多少条直线的问题中，每条线对应着两个点，两个点对应着一条直线。这样就变成了单循环的问题了，公式为：<em>n(n-1)/2</em><br>
 但是对于点来说，虽然每两条直线对应一个交点，但是有些直线的交点并不在圆内，如：<br>
 <img src="https://Alessange.github.io/post-images/1613645884566.jpg" alt="" loading="lazy"></li>
-<li>这两条直线的交点就不在圆内，所以我们并不能直接写出交点的数量。因此，我们可以用圆内接四边形来解决，即圆内每个交点都是由圆上的点组成的四边形组成。每四个点构成的四圆组就成了唯一的交点。<strong>即</strong>：<strong>交点的数量等于圆上的端点构成四元组的数量</strong>。</li>
-<li>所以，四元组的计算公式为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>∗</mo><mo>(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>∗</mo><mo>(</mo><mi>n</mi><mo>−</mo><mn>2</mn><mo>)</mo><mo>∗</mo><mo>(</mo><mi>n</mi><mo>−</mo><mn>3</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">n*(n-1)*(n-2)*(n-3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.46528em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span></span>，但是也还要除去所有的重复项<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">（</mi><mn>1</mn><mo>∗</mo><mn>2</mn><mo>∗</mo><mn>3</mn><mo>∗</mo><mn>4</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">（1*2*3*4)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord cjk_fallback">（</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4</span><span class="mclose">)</span></span></span></span>，所以点的个数为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi>n</mi><mo>∗</mo><mo>(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>∗</mo><mo>(</mo><mi>n</mi><mo>−</mo><mn>2</mn><mo>)</mo><mo>∗</mo><mo>(</mo><mi>n</mi><mo>−</mo><mn>3</mn><mo>)</mo></mrow><mi mathvariant="normal">/</mi><mi mathvariant="normal">（</mi><mn>1</mn><mo>∗</mo><mn>2</mn><mo>∗</mo><mn>3</mn><mo>∗</mo><mn>4</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">{n*(n-1)*(n-2)*(n-3)}/（1*2*3*4)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">3</span><span class="mclose">)</span></span><span class="mord">/</span><span class="mord cjk_fallback">（</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4</span><span class="mclose">)</span></span></span></span></li>
+<li>这两条直线的交点就不在圆内，所以我们并不能直接写出交点的数量。因此，我们可以用圆内接四边形来解决，即圆内每个交点都是由圆上的点组成的四边形组成。每四个点构成的四圆组就成了唯一的交点。<strong>即</strong>：<strong>交点的数量等于圆上的端点构成四元组的数量</strong>。<br>
+所以，四元组的计算公式为$$n*(n-1)<em>(n-2)</em>(n-3)$$，但是也还要除去所有的重复项$$（1<em>2</em>3<em>4)$$，所以点的个数为$${n</em>(n-1)<em>(n-2)</em>(n-3)}/（1<em>2</em>3*4)$$</li>
 </ul>
 <h1 id="但是这和我们计算分割区域的数量有直接关系吗">但是这和我们计算分割区域的数量有直接关系吗？</h1>
-<p>这里就要引入我们的欧拉公式:$ V-E+F=2 $</p>
+<p>这里就要引入我们的欧拉公式:$$ V-E+F=2 $$</p>
 
             </div>
             
