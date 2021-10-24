@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Alessange.github.io</id>
     <title>Alessange</title>
-    <updated>2021-02-19T03:26:06.284Z</updated>
+    <updated>2021-10-24T00:03:48.817Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Alessange.github.io"/>
     <link rel="self" href="https://Alessange.github.io/atom.xml"/>
@@ -14,6 +14,15 @@
     <logo>https://Alessange.github.io/images/avatar.png</logo>
     <icon>https://Alessange.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Alessange</rights>
+    <entry>
+        <title type="html"><![CDATA[爱你]]></title>
+        <id>https://Alessange.github.io/post/ai-ni/</id>
+        <link href="https://Alessange.github.io/post/ai-ni/">
+        </link>
+        <updated>2021-10-23T13:03:16.000Z</updated>
+        <content type="html"><![CDATA[<p>我爱林相均</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[圆猜想]]></title>
         <id>https://Alessange.github.io/post/yuan-cai-xiang/</id>
