@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Alessange.github.io</id>
     <title>Alessange</title>
-    <updated>2021-10-24T00:09:23.448Z</updated>
+    <updated>2022-02-13T21:15:43.044Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Alessange.github.io"/>
     <link rel="self" href="https://Alessange.github.io/atom.xml"/>
@@ -13,14 +13,5 @@
 拿走什么我就看着</subtitle>
     <logo>https://Alessange.github.io/images/avatar.png</logo>
     <icon>https://Alessange.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Alessange</rights>
-    <entry>
-        <title type="html"><![CDATA[爱你]]></title>
-        <id>https://Alessange.github.io/post/ai-ni/</id>
-        <link href="https://Alessange.github.io/post/ai-ni/">
-        </link>
-        <updated>2021-10-23T13:03:16.000Z</updated>
-        <content type="html"><![CDATA[<p>我爱林相均</p>
-]]></content>
-    </entry>
+    <rights>All rights reserved 2022, Alessange</rights>
 </feed>
