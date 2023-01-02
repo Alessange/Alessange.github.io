@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Alessange.github.io</id>
     <title>ToWa</title>
-    <updated>2022-02-13T21:17:49.319Z</updated>
+    <updated>2023-01-02T19:08:26.613Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Alessange.github.io"/>
     <link rel="self" href="https://Alessange.github.io/atom.xml"/>
     <subtitle>work hard</subtitle>
     <logo>https://Alessange.github.io/images/avatar.png</logo>
     <icon>https://Alessange.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2022, ToWa</rights>
+    <rights>All rights reserved 2023, ToWa</rights>
 </feed>
