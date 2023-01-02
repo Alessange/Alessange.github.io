@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Alessange.github.io</id>
-    <title>ToWa</title>
-    <updated>2023-01-02T19:11:33.580Z</updated>
+    <title>ToWa&apos;s blog website</title>
+    <updated>2023-01-02T19:13:48.285Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Alessange.github.io"/>
     <link rel="self" href="https://Alessange.github.io/atom.xml"/>
-    <subtitle>work hard</subtitle>
+    <subtitle>something about my life</subtitle>
     <logo>https://Alessange.github.io/images/avatar.png</logo>
     <icon>https://Alessange.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2023, ToWa</rights>
+    <rights>All rights reserved 2023, ToWa&apos;s blog website</rights>
 </feed>
