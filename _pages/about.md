@@ -15,7 +15,7 @@ Currently, I'm fortunate to be conducting research with <a href="https://www.dgp
 ---
 
 ## *Research Interests* 
-My research interests span <span style="color:#7A85C1; font-weight:bold;">*computer graphics*</span>, <span style="color:#7A85C1; font-weight:bold;">*machine learning*</span>, <span style="color:#7A85C1; font-weight:bold;">*mathematical modeling*</span>, and <span style="color:#7A85C1; font-weight:bold;">*optimization*</span>. I am particularly interested in using mathematical foundations to enhance current deep learning models, focusing on improving their efficiency and generalization capabilities for simulation, modeling, and data-driven scientific computing applications.
+My research interests span <span style="color:#7A85C1; font-weight:bold;">*computer graphics*</span>, <span style="color:#7A85C1; font-weight:bold;">*machine learning*</span>, <span style="color:#7A85C1; font-weight:bold;">*mathematical modeling*</span>, and <span style="color:#7A85C1; font-weight:bold;">*optimization*</span>. I am particularly interested in leveraging mathematical thinking to optimize computational methods and enhance their generalization capabilities for simulation, modeling, and data-driven scientific computing applications.
 
 ---
 
