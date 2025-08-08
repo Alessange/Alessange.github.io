@@ -1,44 +1,23 @@
 ---
 permalink: /
-title: "Shixun Huang — Mathematics & Computer Science"
+title: "Shixun Huang (Towa) 黄诗迅"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Welcome! I’m **Shixun Huang**, a fourth-year undergraduate student at the **University of Toronto**, majoring in **Mathematics** and **Computer Science** with a minor in **Statistics**.  
-My academic and research interests span **machine learning**, **numerical methods**, **optimization**, and **physics-based simulation**.
+Hi! I’m **Shixun Huang**, but you can also call me **Towa**.  
+I’m a fourth-year undergraduate student at the **University of Toronto**, majoring in **Mathematics** and **Computer Science**, with a minor in **Statistics**.
 
-Currently, I’m conducting research with **Professor Eitan Grinspun** at the **Dynamic Graphics Project Lab**, focusing on **neural methods for model order reduction** in real-time deformable object simulation. I also work on combining AI with traditional mathematical models, with applications in epidemiology and quantitative finance.
+Currently, I’m conducting research with <span style="color:#1f78b4; font-weight:bold;">[Professor Eitan Grinspun](https://www.dgp.toronto.edu/~eitan/)</span> at the <span style="color:#33a02c; font-weight:bold;">[Dynamic Graphics Project Lab](https://www.dgp.toronto.edu/)</span>, focusing on **neural methods for model order reduction** in real-time deformable object simulation. I am also working with <span style="color:#e31a1c; font-weight:bold;">[Professor Jude Dzevela Kong](https://www.mathematics.utoronto.ca/people/directories/all-faculty/jude-kong)</span> at <span style="color:#ff7f00; font-weight:bold;">[AIMMLab](https://aimmlab.org/)</span> on **mathematical modeling of infectious diseases** using **Markov Chain Monte Carlo (MCMC)** methods and **SEIR-type epidemic models**.
 
 ---
 
 ## Research Interests
-- **Physics-based simulation** — real-time deformable objects, reduced-order modeling
-- **Machine learning for simulation** — graph neural networks, flow matching, generative modeling
-- **Numerical optimization** — convex and nonconvex methods, ICNNs
-- **Epidemic modeling** — hybrid AI + mathematical frameworks for disease forecasting
+My research interests span **computer graphics**, **machine learning**, **mathematical modeling**, and **optimization**. I am particularly interested in leveraging mathematical ideas to accelerate or improve the generalization ability of current deep learning models, especially in the context of simulation, modeling, and data-driven scientific computing.
 
 ---
 
-## Selected Projects
-- **Latent-Space Optimization for Reduced-Order Simulation**  
-  Developed an Input Convex Neural Network approach to improve generalization and stability in reduced-space simulations.
-- **Hybrid SEIR Models with AI Integration**  
-  Combined traditional compartmental models with machine learning for improved infectious disease forecasting.
-- **High-Frequency Trading Decision Models**  
-  Applied LightGBM to limit order book data for buy/sell/hold classification.
 
----
-
-## Links
-- 📄 [Curriculum Vitae](files/cv.pdf)
-- 📚 [Publications](publications/)
-- 💻 [GitHub](https://github.com/Alessange)
-- ✉️ [Email](mailto:your_email@example.com)
-
----
-
-I’m always open to research collaborations and discussions.  
-Feel free to reach out!
+I’m always open to research collaborations and discussions — feel free to reach out!
