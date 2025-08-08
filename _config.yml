@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Shixun Huang/Towa"
+title                    : "Shixun Huang 黄诗迅"
 title_separator          : "-"
 name                     : &name "Shixun Huang"
 description              : &description "Undergrad at UofT"
