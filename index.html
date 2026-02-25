@@ -9,7 +9,74 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
 
-  <body>
+  <body class="intro-open">
+    <div class="intro-splash" id="intro-splash" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+      <div class="intro-splash-card">
+        <div class="intro-visual" aria-hidden="true">
+          <svg class="intro-mesh" viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="introMeshStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1f5dff" />
+                <stop offset="100%" stop-color="#f0b350" />
+              </linearGradient>
+            </defs>
+            <g class="intro-grid-lines">
+              <line x1="30" y1="35" x2="430" y2="35" />
+              <line x1="30" y1="80" x2="430" y2="80" />
+              <line x1="30" y1="125" x2="430" y2="125" />
+              <line x1="30" y1="170" x2="430" y2="170" />
+              <line x1="30" y1="215" x2="430" y2="215" />
+              <line x1="55" y1="18" x2="55" y2="232" />
+              <line x1="135" y1="18" x2="135" y2="232" />
+              <line x1="215" y1="18" x2="215" y2="232" />
+              <line x1="295" y1="18" x2="295" y2="232" />
+              <line x1="375" y1="18" x2="375" y2="232" />
+            </g>
+            <g class="intro-triangles">
+              <polygon points="76,165 158,86 232,157" />
+              <polygon points="232,157 312,78 386,147" />
+              <polygon points="158,86 246,54 312,78" />
+              <polygon points="132,196 232,157 295,214" />
+            </g>
+            <g class="intro-edges">
+              <line x1="76" y1="165" x2="158" y2="86" />
+              <line x1="158" y1="86" x2="232" y2="157" />
+              <line x1="232" y1="157" x2="76" y2="165" />
+              <line x1="232" y1="157" x2="312" y2="78" />
+              <line x1="312" y1="78" x2="386" y2="147" />
+              <line x1="386" y1="147" x2="232" y2="157" />
+              <line x1="158" y1="86" x2="246" y2="54" />
+              <line x1="246" y1="54" x2="312" y2="78" />
+              <line x1="232" y1="157" x2="295" y2="214" />
+              <line x1="132" y1="196" x2="232" y2="157" />
+              <line x1="132" y1="196" x2="295" y2="214" />
+            </g>
+            <g class="intro-nodes">
+              <circle cx="76" cy="165" r="4" style="--d:0s" />
+              <circle cx="158" cy="86" r="4" style="--d:.12s" />
+              <circle cx="232" cy="157" r="4.5" style="--d:.22s" />
+              <circle cx="312" cy="78" r="4" style="--d:.34s" />
+              <circle cx="386" cy="147" r="4" style="--d:.45s" />
+              <circle cx="246" cy="54" r="3.6" style="--d:.55s" />
+              <circle cx="132" cy="196" r="3.8" style="--d:.66s" />
+              <circle cx="295" cy="214" r="3.8" style="--d:.78s" />
+            </g>
+          </svg>
+          <div class="intro-orbit intro-orbit-a"></div>
+          <div class="intro-orbit intro-orbit-b"></div>
+        </div>
+
+        <p class="intro-kicker">Mathematics · Machine Learning · Graphics</p>
+        <h1 class="intro-title" id="intro-title">Towa Shixun Huang</h1>
+        <p class="intro-subtitle">
+           Computation with mathematical framework, numerical modeling, and geometric thinking.
+        </p>
+        <div class="intro-actions">
+          <button type="button" class="intro-enter-btn" id="intro-enter-btn">Enter Personal Page</button>
+          <button type="button" class="intro-text-btn" id="intro-skip-btn">Skip Intro</button>
+        </div>
+      </div>
+    </div>
     <main class="site-shell">
       <section class="hero card">
         <div class="hero-text">
@@ -111,6 +178,12 @@
     </main>
     <script>
       (function () {
+        const body = document.body;
+        const splash = document.getElementById("intro-splash");
+        const enterBtn = document.getElementById("intro-enter-btn");
+        const skipBtn = document.getElementById("intro-skip-btn");
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
         const buttons = document.querySelectorAll(".filter-btn");
         const items = document.querySelectorAll(".publication-item");
         const empty = document.getElementById("publication-empty");
@@ -136,6 +209,55 @@
             this.classList.add("is-active");
             applyFilter(this.dataset.filter);
           });
+        });
+
+        function closeIntro(immediate) {
+          if (!splash || splash.dataset.closed === "true") {
+            return;
+          }
+
+          splash.dataset.closed = "true";
+          body.classList.remove("intro-open");
+          body.classList.add("intro-dismissed");
+
+          if (immediate || reduceMotion.matches) {
+            splash.remove();
+            return;
+          }
+
+          splash.classList.add("is-exiting");
+          window.setTimeout(() => {
+            splash.remove();
+          }, 700);
+        }
+
+        if (enterBtn) {
+          enterBtn.addEventListener("click", function () {
+            closeIntro(false);
+          });
+        }
+
+        if (skipBtn) {
+          skipBtn.addEventListener("click", function () {
+            closeIntro(true);
+          });
+        }
+
+        if (splash) {
+          splash.addEventListener("click", function (event) {
+            if (event.target === splash) {
+              closeIntro(false);
+            }
+          });
+        }
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") {
+            closeIntro(true);
+          }
+          if (event.key === "Enter" && body.classList.contains("intro-open")) {
+            closeIntro(false);
+          }
         });
       })();
     </script>
