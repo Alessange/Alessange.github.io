@@ -10,6 +10,18 @@
   --accent: #1f5dff;
   --accent-soft: #eaf0ff;
   --line: #dce4f5;
+  --tag-default-bg: #f2f6ff;
+  --tag-default-line: #d1ddfb;
+  --tag-default-ink: #28468e;
+  --tag-epi-bg: #eaf8f3;
+  --tag-epi-line: #bde7d2;
+  --tag-epi-ink: #1f6145;
+  --tag-ml-bg: #e9f1ff;
+  --tag-ml-line: #c5d7ff;
+  --tag-ml-ink: #274c9a;
+  --tag-graphics-bg: #fff4e6;
+  --tag-graphics-line: #f4d3a9;
+  --tag-graphics-ink: #95531f;
 }
 
 * {
@@ -512,13 +524,31 @@ h2 {
   display: inline-flex;
   padding: 0.2rem 0.52rem;
   border-radius: 999px;
-  border: 1px solid #d1ddfb;
-  background: #f2f6ff;
-  color: #28468e;
+  border: 1px solid var(--tag-default-line);
+  background: var(--tag-default-bg);
+  color: var(--tag-default-ink);
   font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.02em;
+}
+
+.publication-tag[data-topic="epidemiology"] {
+  border-color: var(--tag-epi-line);
+  background: var(--tag-epi-bg);
+  color: var(--tag-epi-ink);
+}
+
+.publication-tag[data-topic="machine-learning"] {
+  border-color: var(--tag-ml-line);
+  background: var(--tag-ml-bg);
+  color: var(--tag-ml-ink);
+}
+
+.publication-tag[data-topic="graphics"] {
+  border-color: var(--tag-graphics-line);
+  background: var(--tag-graphics-bg);
+  color: var(--tag-graphics-ink);
 }
 
 .publication-title {
@@ -576,21 +606,6 @@ h2 {
 
 .experience-role {
   font-size: 0.95rem;
-  font-weight: 700;
-}
-
-.site-footer {
-  padding-top: 0.95rem;
-  padding-bottom: 0.95rem;
-}
-
-.site-footer p {
-  color: #58607a;
-  font-size: 0.92rem;
-}
-
-#last-updated {
-  color: #243f92;
   font-weight: 700;
 }
 

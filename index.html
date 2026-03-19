@@ -139,8 +139,8 @@
             <img src="images/anvia_influ.png" alt="Avian Influenza paper thumbnail">
             <div>
               <div class="publication-tags">
-                <span class="publication-tag">Epidemiology</span>
-                <span class="publication-tag">Machine Learning</span>
+                <span class="publication-tag" data-topic="epidemiology">Epidemiology</span>
+                <span class="publication-tag" data-topic="machine-learning">Machine Learning</span>
               </div>
               <p class="publication-title">A systematic review of mathematical and machine learning models of Avian Influenza</p>
               <p>
@@ -182,9 +182,6 @@
           <p>Built epidemiological models with Bayesian inference for infectious disease dynamics.</p>
         </article>
       </section>
-      <footer class="site-footer card" aria-live="polite">
-        <p>Last updated: <span id="last-updated">Checking latest revision...</span></p>
-      </footer>
     </main>
     <script>
       (function () {
@@ -260,44 +257,6 @@
             }
           });
         }
-
-        function setLastUpdated(date) {
-          const target = document.getElementById("last-updated");
-          if (!target || !(date instanceof Date) || Number.isNaN(date.getTime())) {
-            return;
-          }
-          target.textContent = date.toLocaleDateString(undefined, {
-            year: "numeric",
-            month: "short",
-            day: "numeric"
-          });
-        }
-
-        async function updateLastUpdatedFromGitHub() {
-          const owner = "Alessange";
-          const repo = "Alessange.github.io";
-          const path = "index.html";
-          const endpoint = `https://api.github.com/repos/${owner}/${repo}/commits?path=${path}&per_page=1`;
-
-          try {
-            const response = await fetch(endpoint, {
-              headers: { Accept: "application/vnd.github+json" }
-            });
-            if (!response.ok) {
-              throw new Error(`GitHub API request failed: ${response.status}`);
-            }
-            const commits = await response.json();
-            const timestamp = commits[0] && commits[0].commit && commits[0].commit.committer && commits[0].commit.committer.date;
-            if (!timestamp) {
-              throw new Error("No commit date in GitHub response");
-            }
-            setLastUpdated(new Date(timestamp));
-          } catch (_error) {
-            setLastUpdated(new Date(document.lastModified));
-          }
-        }
-
-        updateLastUpdatedFromGitHub();
 
         document.addEventListener("keydown", function (event) {
           if (event.key === "Escape") {
