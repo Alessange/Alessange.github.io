@@ -579,6 +579,21 @@ h2 {
   font-weight: 700;
 }
 
+.site-footer {
+  padding-top: 0.95rem;
+  padding-bottom: 0.95rem;
+}
+
+.site-footer p {
+  color: #58607a;
+  font-size: 0.92rem;
+}
+
+#last-updated {
+  color: #243f92;
+  font-weight: 700;
+}
+
 @media (max-width: 760px) {
   .site-shell {
     width: calc(100% - 1.2rem);
