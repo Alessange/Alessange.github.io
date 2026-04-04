@@ -487,6 +487,23 @@ h2 {
   color: #363d4f;
 }
 
+.news-list li.news-highlight {
+  background: linear-gradient(120deg, #eaf2ff 0%, #f5f9ff 100%) !important;
+  border: 1px solid #9fb9ff !important;
+  border-left: 4px solid #1f5dff !important;
+  color: #1f2f4f;
+  box-shadow: 0 6px 16px rgba(31, 93, 255, 0.14);
+}
+
+.news-list li.news-highlight .news-date {
+  color: #ffffff;
+  background: #1f5dff;
+  padding: 0.1rem 0.46rem;
+  border-radius: 999px;
+  min-width: 0;
+  margin-right: 0.5rem;
+}
+
 .news-date {
   display: inline-block;
   min-width: 74px;
