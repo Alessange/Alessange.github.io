@@ -13,7 +13,7 @@
     <meta property="og:url" content="https://alessange.github.io/">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260403-2">
   </head>
 
   <body class="intro-open">
@@ -117,7 +117,12 @@
 
       <section class="block card" id="news">
         <h2>News</h2>
+        <div class="publication-controls news-controls" aria-label="News display controls">
+          <button class="filter-btn is-active" type="button" data-news-view="recent">Recent news</button>
+          <button class="filter-btn" type="button" data-news-view="all">All news</button>
+        </div>
         <ul class="news-list">
+          <li><span class="news-date">Apr 2026</span> I will join the University of British Columbia (UBC) as a Computer Science PhD student.</li>
           <li><span class="news-date">Jan 2026</span> Nominated by the UofT CS department for the UTEA Award (CAD 12,000).</li>
           <li><span class="news-date">Dec 2025</span> Completed research assistant term at AIMMlab.</li>
           <li><span class="news-date">Apr 2025</span> Joined the Dynamic Graphics Project Lab as an undergraduate research assistant.</li>
@@ -135,6 +140,25 @@
         </div>
 
         <div class="publication-list">
+          <article class="publication-item" data-topics="graphics machine-learning">
+            <img src="images/training_data.gif" alt="ODD-DC paper thumbnail">
+            <div>
+              <div class="publication-tags">
+                <span class="publication-tag" data-topic="graphics" style="--tag-bg:#fff1e8;--tag-line:#ffd5b5;--tag-ink:#8b4316;">Graphics</span>
+                <span class="publication-tag" data-topic="machine-learning" style="--tag-bg:#e9f1ff;--tag-line:#c5d7ff;--tag-ink:#274c9a;">Machine Learning</span>
+              </div>
+              <p class="publication-title">Odd-DC: Generalizable Neural Model Reduction via Odd Difference-of-Convex Structure</p>
+              <p>
+                <strong><em>Shixun Huang</em></strong>, Eitan Grinspun, Yue Chang
+              </p>
+              <p><em>arXiv preprint</em>, 2025</p>
+              <p><a href="https://arxiv.org/abs/2511.18241">Paper Link</a></p>
+              <p class="publication-note">
+                Odd-DC combines convexity and odd symmetry to improve neural model reduction generalization under unseen load magnitudes and directions, while preserving compact latent spaces and real-time performance.
+              </p>
+            </div>
+          </article>
+
           <article class="publication-item" data-topics="epidemiology machine-learning">
             <img src="images/anvia_influ.png" alt="Avian Influenza paper thumbnail">
             <div>
@@ -191,9 +215,12 @@
         const skipBtn = document.getElementById("intro-skip-btn");
         const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-        const buttons = document.querySelectorAll(".filter-btn");
+        const publicationButtons = document.querySelectorAll("#publications .filter-btn");
         const items = document.querySelectorAll(".publication-item");
         const empty = document.getElementById("publication-empty");
+        const newsControls = document.querySelector("#news .news-controls");
+        const newsList = document.querySelector("#news .news-list");
+        const newsButtons = document.querySelectorAll("#news .filter-btn");
 
         function applyFilter(filter) {
           let visibleCount = 0;
@@ -210,13 +237,42 @@
           empty.hidden = visibleCount !== 0;
         }
 
-        buttons.forEach((button) => {
+        publicationButtons.forEach((button) => {
           button.addEventListener("click", function () {
-            buttons.forEach((btn) => btn.classList.remove("is-active"));
+            publicationButtons.forEach((btn) => btn.classList.remove("is-active"));
             this.classList.add("is-active");
             applyFilter(this.dataset.filter);
           });
         });
+
+        if (newsList && newsButtons.length > 0) {
+          const defaultVisibleNews = 3;
+          const newsItems = Array.from(newsList.querySelectorAll("li"));
+          let view = "recent";
+
+          function applyNewsView() {
+            const showAll = view === "all";
+            newsItems.forEach((item, index) => {
+              item.hidden = !showAll && index >= defaultVisibleNews;
+            });
+
+            newsButtons.forEach((button) => {
+              button.classList.toggle("is-active", button.dataset.newsView === view);
+            });
+          }
+
+          if (newsItems.length > defaultVisibleNews) {
+            applyNewsView();
+            newsButtons.forEach((button) => {
+              button.addEventListener("click", function () {
+                view = this.dataset.newsView || "recent";
+                applyNewsView();
+              });
+            });
+          } else if (newsControls) {
+            newsControls.hidden = true;
+          }
+        }
 
         function closeIntro(immediate) {
           if (!splash || splash.dataset.closed === "true") {
