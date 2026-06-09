@@ -22,6 +22,9 @@
   --tag-graphics-bg: #fff4e6;
   --tag-graphics-line: #f4d3a9;
   --tag-graphics-ink: #95531f;
+  --tag-optimization-bg: #f2ecff;
+  --tag-optimization-line: #d8c6ff;
+  --tag-optimization-ink: #5c3998;
 }
 
 * {
@@ -568,6 +571,12 @@ h2 {
   color: var(--tag-graphics-ink);
 }
 
+.publication-tag[data-topic="numerical-optimization"] {
+  border-color: var(--tag-optimization-line);
+  background: var(--tag-optimization-bg);
+  color: var(--tag-optimization-ink);
+}
+
 .publication-title {
   color: var(--ink);
   font-size: 1.02rem;
@@ -586,6 +595,49 @@ h2 {
 .publication-empty {
   font-style: italic;
   color: #5f6678;
+}
+
+.collapsible-section {
+  gap: 0;
+}
+
+.collapsible-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.collapsible-summary::-webkit-details-marker {
+  display: none;
+}
+
+.collapsible-summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+.collapsible-toggle {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.collapsible-toggle::after {
+  content: "Show";
+}
+
+.collapsible-section[open] .collapsible-toggle::after {
+  content: "Hide";
+}
+
+.collapsible-content {
+  display: grid;
+  gap: 0.95rem;
+  margin-top: 0.95rem;
 }
 
 .experience-item {

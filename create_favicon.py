@@ -3,7 +3,7 @@ from PIL import Image
 import os
 
 # Load the original image
-img = Image.open('nailong.jpg')
+img = Image.open('images/misc/nailong.jpg')
 
 # Convert to RGB if necessary
 if img.mode != 'RGB':
