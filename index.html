@@ -9,63 +9,32 @@
     <meta property="og:title" content="Towa Shixun Huang">
     <meta property="og:description" content="Incoming Computer Science PhD student at UBC working on Physics AI, numerical optimization, and graphics.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/profile/shixun_huang_grad_profile.png">
+    <meta property="og:image" content="https://alessange.github.io/images/profile/shixun_huang_grad_profile.png">
+    <meta property="og:image:alt" content="Portrait of Towa Shixun Huang">
     <meta property="og:url" content="https://alessange.github.io/">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://alessange.github.io/images/profile/shixun_huang_grad_profile.png">
+    <link rel="canonical" href="https://alessange.github.io/">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260630-1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260829-7">
   </head>
 
-  <body class="intro-open">
-    <div class="intro-splash" id="intro-splash" role="dialog" aria-modal="true" aria-labelledby="intro-title">
-      <div class="intro-splash-card">
-        <div class="intro-showcase">
-          <div class="intro-profile">
-            <img class="intro-portrait" alt="" src="images/profile/shixun_huang_new.jpg">
-            <div class="intro-profile-copy">
-              <p class="intro-kicker">Research homepage</p>
-              <h1 class="intro-title" id="intro-title">Towa Shixun Huang</h1>
-              <p class="intro-subtitle">
-                Physics AI with mathematical structure, numerical optimization, and geometric thinking.
-              </p>
-            </div>
-          </div>
-
-          <div class="intro-map" aria-label="Quick navigation">
-            <button type="button" class="intro-route is-primary" data-intro-target="#publications">
-              <span>Publications</span>
-              <small>SCA 2026, neural model reduction, and One Health research.</small>
-            </button>
-            <button type="button" class="intro-route" data-intro-target="#news">
-              <span>News</span>
-              <small>Recent papers, awards, appointments, and research updates.</small>
-            </button>
-            <a class="intro-route" href="data/SHIXUN_HUANG_CV.pdf">
-              <span>CV</span>
-              <small>Education, awards, research experience, and contact details.</small>
-            </a>
-          </div>
-        </div>
-
-        <div class="intro-actions">
-          <button type="button" class="intro-enter-btn" id="intro-enter-btn" data-intro-target="#publications">View Publications</button>
-          <button type="button" class="intro-text-btn" id="intro-skip-btn" data-intro-target=".hero" data-intro-immediate="true">Skip to Profile</button>
-        </div>
-      </div>
-    </div>
+  <body>
+    <a class="skip-link" href="#about">Skip to profile</a>
     <main class="site-shell">
-      <section class="hero card">
+      <section class="hero card" id="about" tabindex="-1">
         <div class="hero-text">
-          <p class="name">Towa Shixun Huang <span class="name-alt">(黄诗迅)</span></p>
+          <h1 class="name">Towa Shixun Huang <span class="name-alt">(黄诗迅)</span></h1>
           <p>
-            I am an incoming Computer Science PhD student at the
-            <a href="https://www.ubc.ca/">University of British Columbia</a>. I completed my BSc in Mathematics and
-            Computer Science at the <a href="https://www.utoronto.ca/">University of Toronto</a>, where I have been
-            fortunate to be supervised by Professor
+            I'm a Computer Science PhD student at the
+            <a href="https://www.ubc.ca/">University of British Columbia</a>, advised by
+            <a href="https://peterchencyc.com/">Peter Yichen Chen</a>. I received my BSc in Mathematics and
+            Computer Science from the <a href="https://www.utoronto.ca/">University of Toronto</a>, where I was
+            fortunate to be advised by Professors
             <a href="https://www.mathematics.utoronto.ca/people/directories/all-faculty/jude-kong">Jude Kong</a>
-            and Professor <a href="https://www.dgp.toronto.edu/~eitan/">Eitan Grinspun</a>. I am part of the
-            <a href="https://www.dgp.toronto.edu/">DGP Lab</a>, where I work with
-            <a href="https://changy1506.github.io/">Yue Chang</a>.
+            and <a href="https://www.dgp.toronto.edu/~eitan/">Eitan Grinspun</a>. Previously, I was a member of the
+            <a href="https://www.dgp.toronto.edu/">DGP Lab</a>, where I worked with
+            <a href="https://changy1506.github.io/">Yue Chang</a>, a wonderful mentor and friend.
           </p>
           <p>
             I work on <strong>Physics AI</strong>: integrating physical principles with learning methods to build scalable, stable, and generalizable models via data-assisted optimization of differential/integral equations that preserve physical structure.
@@ -90,8 +59,8 @@
       <section class="block card" id="news">
         <h2>News</h2>
         <div class="publication-controls news-controls" aria-label="News display controls">
-          <button class="filter-btn is-active" type="button" data-news-view="recent">Recent news</button>
-          <button class="filter-btn" type="button" data-news-view="all">All news</button>
+          <button class="filter-btn is-active" type="button" data-news-view="recent" aria-pressed="true">Recent news</button>
+          <button class="filter-btn" type="button" data-news-view="all" aria-pressed="false">All news</button>
         </div>
         <ul class="news-list">
           <li class="news-highlight"><span class="news-date">May 2026</span> <em>Closing Trajectories</em> was accepted to <a href="https://computeranimation.org/">SCA 2026</a>. See you in Barcelona.</li>
@@ -106,11 +75,11 @@
       <section class="block card" id="publications">
         <h2>Publications</h2>
         <div class="publication-controls" aria-label="Publication filters">
-          <button class="filter-btn is-active" type="button" data-filter="all">All</button>
-          <button class="filter-btn" type="button" data-filter="epidemiology">Epidemiology</button>
-          <button class="filter-btn" type="button" data-filter="machine-learning">Machine Learning</button>
-          <button class="filter-btn" type="button" data-filter="numerical-optimization">Numerical Optimization</button>
-          <button class="filter-btn" type="button" data-filter="graphics">Graphics</button>
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="epidemiology" aria-pressed="false">Epidemiology</button>
+          <button class="filter-btn" type="button" data-filter="machine-learning" aria-pressed="false">Machine Learning</button>
+          <button class="filter-btn" type="button" data-filter="numerical-optimization" aria-pressed="false">Numerical Optimization</button>
+          <button class="filter-btn" type="button" data-filter="graphics" aria-pressed="false">Graphics</button>
         </div>
 
         <div class="publication-list">
@@ -145,10 +114,10 @@
               <p>
                 <span class="author-self">Shixun Huang</span>, Eitan Grinspun, Yue Chang
               </p>
-              <p><em>arXiv preprint</em>, 2025</p>
+              <p><em>Conditionally accepted for publication in a leading computer graphics journal</em>, 2026</p>
               <p><a href="https://arxiv.org/abs/2511.18241">Paper Link</a></p>
               <p class="publication-note">
-                Odd-DC combines convexity and odd symmetry to improve neural model reduction generalization under unseen load magnitudes and directions, while preserving compact latent spaces and real-time performance.
+                Odd-DC uses convexity and odd symmetry to generalize neural model reduction to unseen loads, while preserving compact latent spaces and real-time performance.
               </p>
             </div>
           </article>
@@ -208,17 +177,20 @@
     </main>
     <script>
       (function () {
-        const body = document.body;
-        const splash = document.getElementById("intro-splash");
-        const introTargetButtons = document.querySelectorAll("[data-intro-target]");
-        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-
         const publicationButtons = document.querySelectorAll("#publications .filter-btn");
         const items = document.querySelectorAll(".publication-item");
         const empty = document.getElementById("publication-empty");
         const newsControls = document.querySelector("#news .news-controls");
         const newsList = document.querySelector("#news .news-list");
         const newsButtons = document.querySelectorAll("#news .filter-btn");
+
+        function setPressed(buttons, activeButton) {
+          buttons.forEach((button) => {
+            const active = button === activeButton;
+            button.classList.toggle("is-active", active);
+            button.setAttribute("aria-pressed", String(active));
+          });
+        }
 
         function applyFilter(filter) {
           let visibleCount = 0;
@@ -237,8 +209,7 @@
 
         publicationButtons.forEach((button) => {
           button.addEventListener("click", function () {
-            publicationButtons.forEach((btn) => btn.classList.remove("is-active"));
-            this.classList.add("is-active");
+            setPressed(publicationButtons, this);
             applyFilter(this.dataset.filter);
           });
         });
@@ -255,7 +226,9 @@
             });
 
             newsButtons.forEach((button) => {
-              button.classList.toggle("is-active", button.dataset.newsView === view);
+              const active = button.dataset.newsView === view;
+              button.classList.toggle("is-active", active);
+              button.setAttribute("aria-pressed", String(active));
             });
           }
 
@@ -272,76 +245,6 @@
           }
         }
 
-        function scrollToIntroTarget(targetSelector) {
-          const target = document.querySelector(targetSelector);
-          if (!target) {
-            return;
-          }
-
-          target.scrollIntoView({
-            behavior: reduceMotion.matches ? "auto" : "smooth",
-            block: "start"
-          });
-        }
-
-        function closeIntro(immediate, afterClose) {
-          if (!splash || splash.dataset.closed === "true") {
-            if (afterClose) {
-              afterClose();
-            }
-            return;
-          }
-
-          splash.dataset.closed = "true";
-          body.classList.remove("intro-open");
-          body.classList.add("intro-dismissed");
-
-          if (immediate || reduceMotion.matches) {
-            splash.remove();
-            if (afterClose) {
-              window.requestAnimationFrame(afterClose);
-            }
-            return;
-          }
-
-          splash.classList.add("is-exiting");
-          if (afterClose) {
-            window.setTimeout(afterClose, 120);
-          }
-          window.setTimeout(() => {
-            splash.remove();
-          }, 700);
-        }
-
-        introTargetButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            const target = this.dataset.introTarget;
-            const immediate = this.dataset.introImmediate === "true";
-
-            closeIntro(immediate, function () {
-              scrollToIntroTarget(target);
-            });
-          });
-        });
-
-        if (splash) {
-          splash.addEventListener("click", function (event) {
-            if (event.target === splash) {
-              closeIntro(false);
-            }
-          });
-        }
-
-        document.addEventListener("keydown", function (event) {
-          if (event.key === "Escape") {
-            closeIntro(true);
-          }
-          if (event.key === "Enter" && body.classList.contains("intro-open")) {
-            closeIntro(false, function () {
-              scrollToIntroTarget("#publications");
-            });
-          }
-        });
       })();
     </script>
   </body>
