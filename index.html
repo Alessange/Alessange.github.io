@@ -16,7 +16,7 @@
     <meta name="twitter:image" content="https://alessange.github.io/images/profile/shixun_huang_grad_profile.png">
     <link rel="canonical" href="https://alessange.github.io/">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260829-7">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260924-1">
   </head>
 
   <body>
@@ -63,7 +63,8 @@
           <button class="filter-btn" type="button" data-news-view="all" aria-pressed="false">All news</button>
         </div>
         <ul class="news-list">
-          <li class="news-highlight"><span class="news-date">May 2026</span> <em>Closing Trajectories</em> was accepted to <a href="https://computeranimation.org/">SCA 2026</a>. See you in Barcelona.</li>
+          <li class="news-highlight"><span class="news-date">Sep 2026</span> Released <a href="https://arxiv.org/abs/2609.19600"><em>WorldContact</em></a>, a contact-centric world model for scalable robot learning.</li>
+          <li><span class="news-date">May 2026</span> <em>Closing Trajectories</em> was accepted to <a href="https://computeranimation.org/">SCA 2026</a>. See you in Barcelona.</li>
           <li><span class="news-date">Apr 2026</span> I will join the University of British Columbia (UBC) as a Computer Science PhD student.</li>
           <li><span class="news-date">Jan 2026</span> Nominated by the UofT CS department for the UTEA Award (CAD 12,000).</li>
           <li><span class="news-date">Dec 2025</span> Completed research assistant term at AIMMlab.</li>
@@ -78,11 +79,33 @@
           <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
           <button class="filter-btn" type="button" data-filter="epidemiology" aria-pressed="false">Epidemiology</button>
           <button class="filter-btn" type="button" data-filter="machine-learning" aria-pressed="false">Machine Learning</button>
+          <button class="filter-btn" type="button" data-filter="robotics" aria-pressed="false">Robotics</button>
           <button class="filter-btn" type="button" data-filter="numerical-optimization" aria-pressed="false">Numerical Optimization</button>
           <button class="filter-btn" type="button" data-filter="graphics" aria-pressed="false">Graphics</button>
         </div>
 
         <div class="publication-list">
+          <article class="publication-item" data-topics="robotics machine-learning">
+            <img src="images/publications/worldcontact.png" alt="WorldContact paper overview">
+            <div>
+              <div class="publication-tags">
+                <span class="publication-tag" data-topic="robotics">Robotics</span>
+                <span class="publication-tag" data-topic="machine-learning">Machine Learning</span>
+              </div>
+              <p class="publication-title">WorldContact: A Contact-Centric World Model for Scalable Robot Learning</p>
+              <p>
+                Caoliwen Wang, Mengdi Wang, Heng Zhang, <span class="author-self">Shixun Huang</span>, Siyuan Chen,
+                Chao Liu, Anpei Chen, Zhendong Wang, Peter Yichen Chen, Huamin Wang
+              </p>
+              <p><em>arXiv preprint arXiv:2609.19600</em>, 2026</p>
+              <p><a href="https://arxiv.org/abs/2609.19600">Paper Link</a></p>
+              <p class="publication-note">
+                WorldContact learns contact-aware deformable-object dynamics from limited high-quality trajectories,
+                generating robot-policy training data with 10&times; faster state rollouts and improving real-robot bag-lifting success from 65% to 95%.
+              </p>
+            </div>
+          </article>
+
           <article class="publication-item" data-topics="graphics numerical-optimization">
             <img src="images/publications/closing-trajectories.gif" alt="Closing Trajectories paper thumbnail">
             <div>
