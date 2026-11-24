@@ -556,3 +556,11 @@ h2 {
 .publication-note { text-wrap: pretty; }
 sup.corr { font-size: 0.72em; margin-left: 1px; }
 .corr-note { color: var(--muted); font-size: 0.86em; white-space: nowrap; }
+
+/* corresponding-author asterisk: instant tooltip on hover / focus (the native title tooltip is slow and tiny) */
+sup.corr { position: relative; cursor: help; padding: 0 3px 0 1px; }
+sup.corr::after { content: attr(data-tip); position: absolute; left: 50%; bottom: 135%; transform: translateX(-50%); white-space: nowrap;
+  background: var(--ink); color: var(--bg); font-size: 0.72rem; font-weight: 500; line-height: 1; padding: 5px 8px; border-radius: 4px;
+  opacity: 0; pointer-events: none; transition: opacity .12s ease; z-index: 5; }
+sup.corr:hover::after, sup.corr:focus::after, sup.corr:focus-visible::after { opacity: 1; }
+sup.corr:focus { outline: none; }
