@@ -556,6 +556,11 @@ section > h2 { margin-bottom: 40px; }
   opacity: 0; pointer-events: none; transition: opacity .12s ease; z-index: 5; font-family: inherit; vertical-align: baseline; }
 .authors .corr:hover::after, .authors .corr:focus::after { opacity: 1; }
 .authors .corr:focus { outline: none; }
+
+/* affiliation colours (each school's own colour; numbers in the author list match) */
+.af-ubc { color: #0055B7; } .af-uoft { color: #1E3765; } .af-stanford { color: #8C1515; } .af-yonsei { color: #4A7BC4; } .af-nvidia { color: #5E9400; }
+@media (prefers-color-scheme: dark) { .af-ubc { color: #6FA8F0; } .af-uoft { color: #9DB2E0; } .af-stanford { color: #E07A7A; } .af-yonsei { color: #8FB0E8; } .af-nvidia { color: #8FCB3A; } }
+.authors sup .af-ubc, .authors sup .af-uoft, .authors sup .af-stanford, .authors sup .af-yonsei, .authors sup .af-nvidia { font-weight: 600; }
 </style>
 </head>
 <body>
@@ -577,9 +582,9 @@ section > h2 { margin-bottom: 40px; }
   <h1 class="ptitle"><span class="t1">PRIO.</span> <span class="t2">Pre-trained Representation for Interactive Objects in 4D Worlds.</span></h1>
   <p class="lead">Static 3D objects that move, deform, and respond.</p>
   <div class="authors">
-    <span>Shixun Huang<sup>1</sup></span><span>Lifu Wei<sup>1</sup></span><span>Yue Chang<sup>2,<span class="corr" tabindex="0" aria-label="Corresponding author" data-tip="Corresponding author">*</span></sup></span><span>Chen Geng<sup>3,<span class="corr" tabindex="0" aria-label="Corresponding author" data-tip="Corresponding author">*</span></sup></span><span>Heng Zhang<sup>1</sup></span><span>Jinhyung Ahn<sup>4</sup></span><span>Caoliwen Wang<sup>1</sup></span><span>Siyuan Chen<sup>1</sup></span><span>Donglai Xiang<sup>5</sup></span><span>Jiajun Wu<sup>3</sup></span><span>Peter Yichen Chen<sup>1</sup></span>
+    <span>Shixun Huang<sup><span class="af-ubc">1</span></sup></span><span>Lifu Wei<sup><span class="af-ubc">1</span></sup></span><span>Yue Chang<sup><span class="af-uoft">2</span>,<span class="corr" tabindex="0" aria-label="Corresponding author" data-tip="Corresponding author">*</span></sup></span><span>Chen Geng<sup><span class="af-stanford">3</span>,<span class="corr" tabindex="0" aria-label="Corresponding author" data-tip="Corresponding author">*</span></sup></span><span>Heng Zhang<sup><span class="af-ubc">1</span></sup></span><span>Jinhyung Ahn<sup><span class="af-yonsei">4</span></sup></span><span>Caoliwen Wang<sup><span class="af-ubc">1</span></sup></span><span>Siyuan Chen<sup><span class="af-ubc">1</span></sup></span><span>Donglai Xiang<sup><span class="af-nvidia">5</span></sup></span><span>Jiajun Wu<sup><span class="af-stanford">3</span></sup></span><span>Peter Yichen Chen<sup><span class="af-ubc">1</span></sup></span>
   </div>
-  <p class="affil"><sup>1</sup>University of British Columbia &nbsp; <sup>2</sup>University of Toronto &nbsp; <sup>3</sup>Stanford University &nbsp; <sup>4</sup>Yonsei University &nbsp; <sup>5</sup>NVIDIA</p>
+  <p class="affil"><span class="af-ubc"><sup>1</sup>University of British Columbia</span> &nbsp; <span class="af-uoft"><sup>2</sup>University of Toronto</span> &nbsp; <span class="af-stanford"><sup>3</sup>Stanford University</span> &nbsp; <span class="af-yonsei"><sup>4</sup>Yonsei University</span> &nbsp; <span class="af-nvidia"><sup>5</sup>NVIDIA</span></p>
   <div class="links">
     <a class="pill dark" href="https://arxiv.org/abs/2611.25500">Paper</a>
     <span class="pill soon" title="Code coming soon">Code &middot; coming soon</span>
