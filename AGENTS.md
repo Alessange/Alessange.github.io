@@ -15,7 +15,7 @@ Owner: Towa Shixun Huang. These are his standing rules for `index.html` / `style
 - No topic categories / coloured tags.
 - Thumbnails: use the images he provided; never crop them -- shrink the whole image into a 4:3 frame (640x480) padded with the page background (#fcfcfa); animated GIFs become muted looping MP4s with a poster.
 - Order: PRIO, Odd-DC, WorldContact, Closing Trajectories, then the rest.
-- PRIO (arXiv 2611.25500, project page `prio/`): never mention CVPR or any venue / "under review" (CVPR 2027 policy).
+- PRIO (arXiv 2611.25500, project page `prio/`): list it as an arXiv preprint only; no venue line.
 
 ## Experience
 - Do not list his PhD as an experience entry.
