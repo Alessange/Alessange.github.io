@@ -1,0 +1,5 @@
+exclude:
+  - AGENTS.md
+  - README.md
+  - create_favicon.py
+  - __pycache__

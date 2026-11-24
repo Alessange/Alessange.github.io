@@ -16,13 +16,17 @@
     <meta name="twitter:image" content="https://alessange.github.io/images/profile/shixun_huang_grad_profile.png">
     <link rel="canonical" href="https://alessange.github.io/">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260924-1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,500&amp;display=swap">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261124-3">
   </head>
 
   <body>
     <a class="skip-link" href="#about">Skip to profile</a>
     <main class="site-shell">
-      <section class="hero card" id="about" tabindex="-1">
+      <section class="hero" id="about" tabindex="-1">
         <div class="hero-text">
           <h1 class="name">Towa Shixun Huang <span class="name-alt">(黄诗迅)</span></h1>
           <p>
@@ -53,125 +57,112 @@
         </div>
         <div class="hero-photo-wrap">
           <a href="images/profile/shixun_huang_grad_profile.png">
-            <img class="hero-photo" alt="profile photo" src="images/profile/shixun_huang_grad_profile.png">
+            <img class="hero-photo" width="336" height="336" alt="profile photo" src="images/profile/shixun_huang_grad_profile.png">
           </a>
         </div>
       </section>
 
-      <section class="block card" id="news">
+      <section class="block" id="news">
+        <div class="section-head">
         <h2>News</h2>
         <div class="publication-controls news-controls" aria-label="News display controls">
           <button class="filter-btn is-active" type="button" data-news-view="recent" aria-pressed="true">Recent news</button>
           <button class="filter-btn" type="button" data-news-view="all" aria-pressed="false">All news</button>
         </div>
+        </div>
         <ul class="news-list">
-          <li class="news-highlight"><span class="news-date">Sep 2026</span> Released <a href="https://arxiv.org/abs/2609.19600"><em>WorldContact</em></a>, a contact-centric world model for scalable robot learning.</li>
-          <li><span class="news-date">May 2026</span> <em>Closing Trajectories</em> was accepted to <a href="https://computeranimation.org/">SCA 2026</a>. See you in Barcelona.</li>
-          <li><span class="news-date">Apr 2026</span> Joined the University of British Columbia (UBC) as a Computer Science PhD student.</li>
-          <li><span class="news-date">Jan 2026</span> Nominated by the UofT CS department for the UTEA Award (CAD 12,000).</li>
-          <li><span class="news-date">Dec 2025</span> Completed research assistant term at AIMMlab.</li>
-          <li><span class="news-date">Apr 2025</span> Joined the Dynamic Graphics Project Lab as an undergraduate research assistant.</li>
-          <li><span class="news-date">Jan 2025</span> Published first-author systematic review on Avian Influenza in <em>One Health</em>.</li>
+          <li class="news-highlight"><span class="news-date">Nov 2026</span> Released <a href="prio/"><em>PRIO</em></a>.</li>
+          <li><span class="news-date">Sep 2026</span> Released <a href="https://arxiv.org/abs/2609.19600"><em>WorldContact</em></a>.</li>
+          <li><span class="news-date">May 2026</span> <em>Closing Trajectories</em> accepted to <a href="https://computeranimation.org/">SCA 2026</a>.</li>
+          <li><span class="news-date">Apr 2026</span> Joined UBC as a CS PhD student.</li>
+          <li><span class="news-date">Jan 2026</span> Nominated for the UofT UTEA Award.</li>
+          <li><span class="news-date">Dec 2025</span> Completed my RA term at AIMMlab.</li>
+          <li><span class="news-date">Apr 2025</span> Joined the DGP Lab as an undergraduate RA.</li>
+          <li><span class="news-date">Jan 2025</span> First-author review on Avian Influenza in <em>One Health</em>.</li>
         </ul>
       </section>
 
-      <section class="block card" id="publications">
+      <section class="block" id="publications">
+        <div class="section-head">
         <h2>Publications</h2>
-        <div class="publication-controls" aria-label="Publication filters">
-          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter-btn" type="button" data-filter="epidemiology" aria-pressed="false">Epidemiology</button>
-          <button class="filter-btn" type="button" data-filter="machine-learning" aria-pressed="false">Machine Learning</button>
-          <button class="filter-btn" type="button" data-filter="robotics" aria-pressed="false">Robotics</button>
-          <button class="filter-btn" type="button" data-filter="numerical-optimization" aria-pressed="false">Numerical Optimization</button>
-          <button class="filter-btn" type="button" data-filter="graphics" aria-pressed="false">Graphics</button>
+        <div class="publication-controls" aria-label="Publication display controls">
+          <button class="filter-btn is-active" type="button" data-pub-view="selected" aria-pressed="true">Selected</button>
+          <button class="filter-btn" type="button" data-pub-view="all" aria-pressed="false">All</button>
+        </div>
         </div>
 
         <div class="publication-list">
-          <article class="publication-item" data-topics="robotics machine-learning">
-            <img src="images/publications/worldcontact.png" alt="WorldContact paper overview">
+          <article class="publication-item first-author" data-selected="1">
+            <video src="images/publications/prio-dragon.mp4" poster="images/publications/prio-dragon.jpg" autoplay muted loop playsinline aria-label="PRIO: a plush dragon reconstructed from photos responds to pulls"></video>
             <div>
-              <div class="publication-tags">
-                <span class="publication-tag" data-topic="robotics">Robotics</span>
-                <span class="publication-tag" data-topic="machine-learning">Machine Learning</span>
-              </div>
+              <p class="publication-title">PRIO: Pre-trained Representation for Interactive Objects in 4D Worlds</p>
+              <p>
+                <span class="author-self">Shixun Huang</span>, Lifu Wei, Yue Chang<sup class="corr" title="Corresponding author">*</sup>, Chen Geng<sup class="corr" title="Corresponding author">*</sup>, Heng Zhang, Jinhyung Ahn,
+                Caoliwen Wang, Siyuan Chen, Donglai Xiang, Jiajun Wu, Peter Yichen Chen
+              
+                <span class="corr-note">(* corresponding authors)</span></p>
+              <p class="publication-links"><a href="https://arxiv.org/abs/2611.25500">Paper</a> / <a href="prio/">Project Page</a> / <span class="muted">Code (coming soon)</span></p>
+              <p class="publication-note"><b>TL;DR</b> One forward pass makes meshes, points and 3D Gaussians move and deform in real time.</p>
+            </div>
+          </article>
+          <article class="publication-item first-author" data-topics="graphics machine-learning" data-selected="1">
+            <video src="images/publications/odd-dc.mp4" poster="images/publications/odd-dc.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Odd-DC paper thumbnail"></video>
+            <div>
+              <p class="publication-title">Odd-DC: Generalizable Neural Model Reduction via Odd Difference-of-Convex Structure</p>
+              <p>
+                <span class="author-self">Shixun Huang</span>, Eitan Grinspun, Yue Chang
+              </p>
+              <p class="venue-accepted">Conditionally accepted to a leading computer graphics journal, 2026</p>
+              <p class="publication-links"><a href="https://arxiv.org/abs/2511.18241">Paper</a></p>
+              <p class="publication-note"><b>TL;DR</b> Convexity and odd symmetry let neural model reduction generalize to unseen loads.</p>
+            </div>
+          </article>
+
+          <article class="publication-item" data-topics="robotics machine-learning" data-selected="1">
+            <img loading="lazy" decoding="async" src="images/publications/worldcontact-4x3.png" alt="WorldContact: real-robot bag lifting">
+            <div>
               <p class="publication-title">WorldContact: A Contact-Centric World Model for Scalable Robot Learning</p>
               <p>
                 Caoliwen Wang, Mengdi Wang, Heng Zhang, <span class="author-self">Shixun Huang</span>, Siyuan Chen,
                 Chao Liu, Anpei Chen, Zhendong Wang, Peter Yichen Chen, Huamin Wang
               </p>
-              <p><em>arXiv preprint arXiv:2609.19600</em>, 2026</p>
-              <p><a href="https://arxiv.org/abs/2609.19600">Paper Link</a></p>
-              <p class="publication-note">
-                WorldContact learns contact-aware deformable-object dynamics from limited high-quality trajectories,
-                generating robot-policy training data with 10&times; faster state rollouts and improving real-robot bag-lifting success from 65% to 95%.
-              </p>
+              <p class="publication-links"><a href="https://arxiv.org/abs/2609.19600">Paper</a></p>
+              <p class="publication-note"><b>TL;DR</b> A contact-centric world model makes robot data 10&times; faster and real-robot success 95%.</p>
             </div>
           </article>
 
-          <article class="publication-item" data-topics="graphics numerical-optimization">
-            <img src="images/publications/closing-trajectories.gif" alt="Closing Trajectories paper thumbnail">
+          <article class="publication-item first-author" data-topics="graphics numerical-optimization" data-selected="1">
+            <video src="images/publications/closing-trajectories.mp4" poster="images/publications/closing-trajectories.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Closing Trajectories paper thumbnail"></video>
             <div>
-              <div class="publication-tags">
-                <span class="publication-tag" data-topic="graphics" style="--tag-bg:#fff1e8;--tag-line:#ffd5b5;--tag-ink:#8b4316;">Graphics</span>
-                <span class="publication-tag" data-topic="numerical-optimization">Numerical Optimization</span>
-              </div>
               <p class="publication-title">Closing Trajectories: Equation-Free Cyclic Animation via Koopman Surrogates</p>
               <p>
                 <span class="author-self">Shixun Huang</span>, Siyuan Chen, Yue Chang, Zhecheng Wang, Peter Yichen Chen
               </p>
-              <p><em>ACM SIGGRAPH / Eurographics Symposium on Computer Animation (SCA)</em>, 2026</p>
-              <p><a href="https://arxiv.org/abs/2605.23462">Paper Link</a></p>
-              <p class="publication-note">
-                Closing Trajectories formulates cyclic animation as a numerical optimization problem, solving for
-                periodic controls under hard temporal constraints through a Koopman surrogate.
-              </p>
+              <p class="venue-accepted">ACM SIGGRAPH / Eurographics Symposium on Computer Animation (SCA), 2026</p>
+              <p class="publication-links"><a href="https://arxiv.org/abs/2605.23462">Paper</a></p>
+              <p class="publication-note"><b>TL;DR</b> A Koopman surrogate solves cyclic animation as periodic control, with no equations.</p>
             </div>
           </article>
 
-          <article class="publication-item" data-topics="graphics machine-learning">
-            <img src="images/publications/odd-dc-training-data.gif" alt="ODD-DC paper thumbnail">
-            <div>
-              <div class="publication-tags">
-                <span class="publication-tag" data-topic="graphics" style="--tag-bg:#fff1e8;--tag-line:#ffd5b5;--tag-ink:#8b4316;">Graphics</span>
-                <span class="publication-tag" data-topic="machine-learning" style="--tag-bg:#e9f1ff;--tag-line:#c5d7ff;--tag-ink:#274c9a;">Machine Learning</span>
-              </div>
-              <p class="publication-title">Odd-DC: Generalizable Neural Model Reduction via Odd Difference-of-Convex Structure</p>
-              <p>
-                <span class="author-self">Shixun Huang</span>, Eitan Grinspun, Yue Chang
-              </p>
-              <p><em>Conditionally accepted for publication in a leading computer graphics journal</em>, 2026</p>
-              <p><a href="https://arxiv.org/abs/2511.18241">Paper Link</a></p>
-              <p class="publication-note">
-                Odd-DC uses convexity and odd symmetry to generalize neural model reduction to unseen loads, while preserving compact latent spaces and real-time performance.
-              </p>
-            </div>
-          </article>
 
-          <article class="publication-item" data-topics="epidemiology machine-learning">
-            <img src="images/publications/avian-influenza.png" alt="Avian Influenza paper thumbnail">
+          <article class="publication-item first-author" data-topics="epidemiology machine-learning">
+            <img loading="lazy" decoding="async" src="images/publications/avian-influenza-4x3.png" alt="Avian Influenza paper thumbnail">
             <div>
-              <div class="publication-tags">
-                <span class="publication-tag" data-topic="epidemiology" style="--tag-bg:#eaf8f3;--tag-line:#bde7d2;--tag-ink:#1f6145;">Epidemiology</span>
-                <span class="publication-tag" data-topic="machine-learning" style="--tag-bg:#e9f1ff;--tag-line:#c5d7ff;--tag-ink:#274c9a;">Machine Learning</span>
-              </div>
               <p class="publication-title">A systematic review of mathematical and machine learning models of Avian Influenza</p>
               <p>
                 <span class="author-self">Shixun Huang</span>, Nicola Luigi Bragazzi, Zahra Movahedi Nia, Murray Gillies,
                 Emma Gardner, Doris Leung, Itlala Gizo, Jude D. Kong
               </p>
-              <p><em>One Health</em>, 2025</p>
-              <p><a href="https://www.sciencedirect.com/science/article/pii/S2352771425002393">Paper Link</a></p>
-              <p class="publication-note">
-                A systematic review of mathematical, statistical, and machine learning models for understanding
-                Avian Influenza dynamics, forecasting outbreaks, and evaluating intervention strategies.
-              </p>
+              <p class="venue-accepted"><em>One Health</em>, 2025</p>
+              <p class="publication-links"><a href="https://www.sciencedirect.com/science/article/pii/S2352771425002393">Paper</a></p>
+              <p class="publication-note"><b>TL;DR</b> We review mathematical, statistical and ML models of Avian Influenza.</p>
             </div>
           </article>
         </div>
-        <p class="publication-empty" id="publication-empty" hidden>No publication matches this topic yet.</p>
+        <p class="publication-empty" id="publication-empty" hidden>No publications yet.</p>
       </section>
 
-      <details class="block card collapsible-section" id="experience">
+      <details class="block collapsible-section" id="experience">
         <summary class="collapsible-summary">
           <h2>Experience</h2>
           <span class="collapsible-toggle" aria-hidden="true"></span>
@@ -181,11 +172,11 @@
           <article class="experience-item">
             <div class="experience-head">
               <p class="experience-place"><a href="https://www.dgp.toronto.edu/">Dynamic Graphics Project Lab</a></p>
-              <p class="experience-date">Apr 2025 - Present</p>
+              <p class="experience-date">Apr 2025 - Aug 2026</p>
             </div>
             <p class="experience-role">Undergraduate Research Assistant</p>
             <p><strong>Advisors:</strong> Eitan Grinspun, Yue Chang</p>
-            <p>Developing input-convex model reduction methods for physics-based simulation.</p>
+            <p>Developed input-convex model reduction methods for physics-based simulation.</p>
           </article>
 
           <article class="experience-item">
@@ -202,6 +193,15 @@
     </main>
     <script>
       (function () {
+        // Respect reduced-motion: no autoplay, offer controls instead.
+        if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          document.querySelectorAll("video[autoplay]").forEach((video) => {
+            video.removeAttribute("autoplay");
+            video.pause();
+            video.controls = true;
+          });
+        }
+
         const publicationButtons = document.querySelectorAll("#publications .filter-btn");
         const items = document.querySelectorAll(".publication-item");
         const empty = document.getElementById("publication-empty");
@@ -217,27 +217,23 @@
           });
         }
 
-        function applyFilter(filter) {
+        function applyPubView(view) {
           let visibleCount = 0;
-
           items.forEach((item) => {
-            const topics = (item.dataset.topics || "").split(" ").filter(Boolean);
-            const matches = filter === "all" || topics.includes(filter);
-            item.hidden = !matches;
-            if (matches) {
-              visibleCount += 1;
-            }
+            const show = view === "all" || item.dataset.selected === "1";
+            item.hidden = !show;
+            if (show) visibleCount += 1;
           });
-
           empty.hidden = visibleCount !== 0;
         }
 
         publicationButtons.forEach((button) => {
           button.addEventListener("click", function () {
             setPressed(publicationButtons, this);
-            applyFilter(this.dataset.filter);
+            applyPubView(this.dataset.pubView);
           });
         });
+        applyPubView("selected");
 
         if (newsList && newsButtons.length > 0) {
           const defaultVisibleNews = 3;
