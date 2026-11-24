@@ -561,6 +561,11 @@ section > h2 { margin-bottom: 40px; }
 .af-ubc { color: #0055B7; } .af-uoft { color: #2B4C8C; } .af-stanford { color: #8C1515; } .af-yonsei { color: #00838F; } .af-nvidia { color: #5E9400; }
 @media (prefers-color-scheme: dark) { .af-ubc { color: #6FA8F0; } .af-uoft { color: #9DB2E0; } .af-stanford { color: #E07A7A; } .af-yonsei { color: #5CC8D0; } .af-nvidia { color: #8FCB3A; } }
 .authors sup .af-ubc, .authors sup .af-uoft, .authors sup .af-stanford, .authors sup .af-yonsei, .authors sup .af-nvidia { font-weight: 600; }
+
+/* title as in the paper: PRIO and the initials P, R, I, O in prioblue (#245A81), the rest in ink */
+.hero h1.ptitle { color: var(--ink); }
+.hero h1.ptitle .pb { color: #245A81; }
+@media (prefers-color-scheme: dark) { .hero h1.ptitle .pb { color: #7FB0D6; } }
 </style>
 </head>
 <body>
@@ -579,7 +584,7 @@ section > h2 { margin-bottom: 40px; }
 </div></nav>
 
 <header id="top" class="wrap hero">
-  <h1 class="ptitle"><span class="t1">PRIO.</span> <span class="t2">Pre-trained Representation for Interactive Objects in 4D Worlds.</span></h1>
+  <h1 class="ptitle"><span class="pb">PRIO</span>: <span class="pb">P</span>re-trained <span class="pb">R</span>epresentation for <span class="pb">I</span>nteractive <span class="pb">O</span>bjects in 4D Worlds</h1>
   <p class="lead">Static 3D objects that move, deform, and respond.</p>
   <div class="authors">
     <span>Shixun Huang<sup><span class="af-ubc">1</span></sup></span><span>Lifu Wei<sup><span class="af-ubc">1</span></sup></span><span>Yue Chang<sup><span class="af-uoft">2</span>,<span class="corr" tabindex="0" aria-label="Corresponding author" data-tip="Corresponding author">*</span></sup></span><span>Chen Geng<sup><span class="af-stanford">3</span>,<span class="corr" tabindex="0" aria-label="Corresponding author" data-tip="Corresponding author">*</span></sup></span><span>Heng Zhang<sup><span class="af-ubc">1</span></sup></span><span>Jinhyung Ahn<sup><span class="af-yonsei">4</span></sup></span><span>Caoliwen Wang<sup><span class="af-ubc">1</span></sup></span><span>Siyuan Chen<sup><span class="af-ubc">1</span></sup></span><span>Donglai Xiang<sup><span class="af-nvidia">5</span></sup></span><span>Jiajun Wu<sup><span class="af-stanford">3</span></sup></span><span>Peter Yichen Chen<sup><span class="af-ubc">1</span></sup></span>
